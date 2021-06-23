@@ -17,10 +17,11 @@
 		<link rel="modulepreload" href="/./_app/chunks/vendor-d2da8f8e.js">
 		<link rel="modulepreload" href="/./_app/pages/__layout.svelte-dee71afa.js">
 		<link rel="modulepreload" href="/./_app/chunks/stores-f1cc643b.js">
-		<link rel="modulepreload" href="/./_app/pages/index.svelte-db67269b.js">
+		<link rel="modulepreload" href="/./_app/pages/sketches/index.svelte-646218b3.js">
 		<link rel="stylesheet" href="/./_app/assets/start-a8cd1609.css">
 		<link rel="stylesheet" href="/./_app/assets/pages/__layout.svelte-24b63ae7.css">
 		<link rel="stylesheet" href="/./_app/assets/NavBar.svelte_svelte&type=style&lang-37a5ce44.css">
+		<link rel="stylesheet" href="/./_app/assets/pages/sketches/index.svelte-e8995567.css">
 
 		<script type="module">
 			import { start } from "/./_app/start-77c58d1f.js";
@@ -37,11 +38,11 @@
 					error: null,
 					nodes: [
 						import("/./_app/pages/__layout.svelte-dee71afa.js"),
-						import("/./_app/pages/index.svelte-db67269b.js")
+						import("/./_app/pages/sketches/index.svelte-646218b3.js")
 					],
 					page: {
 						host: location.host, // TODO this is redundant
-						path: "/",
+						path: "/sketches",
 						query: new URLSearchParams(""),
 						params: {}
 					}
@@ -58,7 +59,7 @@
 
 
 
-	
+	<script type="svelte-data" url="/api/sketches.json">{"status":200,"statusText":"","headers":{"content-type":"application/json"},"body":"{\"sketches\":[{\"id\":\"grid-layer\",\"name\":\"Column Grid Distribution\",\"brief\":\"\\\"Uniformly\\\" distributing grid items of various heights (but similar width) into columns.\"}]}"}</script>
 
 	</body>
 </html>
