@@ -15,7 +15,7 @@
 		<link rel="modulepreload" href="/./_app/chunks/vendor-3b4442f1.js">
 		<link rel="modulepreload" href="/./_app/pages/__layout.svelte-4c4acc41.js">
 		<link rel="modulepreload" href="/./_app/chunks/stores-ec02e4d1.js">
-		<link rel="modulepreload" href="/./_app/pages/sketches/index.svelte-1f3e2ca7.js">
+		<link rel="modulepreload" href="/./_app/pages/projects.svelte-6a1384ad.js">
 		<link rel="modulepreload" href="/./_app/chunks/DisplayCard-ea464ce8.js">
 		<link rel="stylesheet" href="/./_app/assets/start-363b57ad.css">
 		<link rel="stylesheet" href="/./_app/assets/pages/__layout.svelte-410a0e6e.css">
@@ -37,11 +37,11 @@
 					error: null,
 					nodes: [
 						import("/./_app/pages/__layout.svelte-4c4acc41.js"),
-						import("/./_app/pages/sketches/index.svelte-1f3e2ca7.js")
+						import("/./_app/pages/projects.svelte-6a1384ad.js")
 					],
 					page: {
 						host: location.host, // TODO this is redundant
-						path: "/sketches",
+						path: "/projects",
 						query: new URLSearchParams(""),
 						params: {}
 					}
@@ -58,7 +58,7 @@
 
 
 
-	<script type="svelte-data" url="/api/sketches.json">{"status":200,"statusText":"","headers":{"content-type":"application/json"},"body":"{\"sketches\":[{\"id\":\"grid-layer\",\"name\":\"Column Grid Distribution\",\"brief\":\"\\\"Uniformly\\\" distributing grid items of various heights (but similar width) into columns.\"}]}"}</script>
+	<script type="svelte-data" url="/api/projects.json">{"status":200,"statusText":"","headers":{"content-type":"application/json"},"body":"{\"projects\":[{\"type\":\"GitHub\",\"source\":\"https:\u002F\u002Fgithub.com\u002Fflmng0\u002Fpeach\",\"name\":\"Peach\",\"slug\":\"peach\",\"brief\":\"Processing inspired creative coding API, written in Rust using WGPU.\"},{\"type\":\"GitHub\",\"source\":\"https:\u002F\u002Fgithub.com\u002Fflmng0\u002FMajorProject\",\"name\":\"Major Project\",\"slug\":\"major-project\",\"brief\":\"Graphing calculator made in C# using .NET Core, for IES20 Major Project.\"},{\"type\":\"Website\",\"ref\":\"https:\u002F\u002Fflmng0.github.io\",\"source\":\"https:\u002F\u002Fgithub.com\u002Fflmng0\u002Fflmng0.github.io\",\"name\":\"Portfolio\",\"slug\":\"portfolio\",\"brief\":\"The page you're looking at! My personal portfolio for the things I've made, information about me, etc.\"}]}"}</script>
 
 	</body>
 </html>
